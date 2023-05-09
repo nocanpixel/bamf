@@ -5,6 +5,7 @@ import { useMatch } from "react-router-dom";
 import { ReadMore } from "../../components/ReadMore";
 import { Button, Text } from "@nextui-org/react";
 import { useNavigate } from "react-router-dom";
+import { LanguageIcon } from "../../assets/icons";
 
 export const App = () => {
   const match = useMatch("/");
@@ -28,7 +29,11 @@ export const App = () => {
     <>
       <div>
         <Navbar>
+          <div></div>
           <Title>BAMF</Title>
+          <div style={{width:"22px", marginTop:'5px'}}>
+            <LanguageIcon/>
+          </div>
         </Navbar>
         {match && <Index />}
         <Outlet />

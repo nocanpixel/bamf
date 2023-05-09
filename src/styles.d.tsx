@@ -5,8 +5,9 @@ export const Navbar = styled.div`
     height: 60px;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 15px 0 15px;
 `
 
 export const Title = styled.h2`

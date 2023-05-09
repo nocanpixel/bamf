@@ -1,5 +1,6 @@
 import { Text } from "@nextui-org/react";
 import { useNavigate } from "react-router-dom";
+import { BackArrowIcon } from "../../assets/icons";
 import { Container } from "../../components/Container";
 import { ContainerTitle, Description } from "../../styles.d";
 
@@ -22,7 +23,9 @@ export const Main = () => {
 
   return (
     <>
-        <Text onClick={()=> navigate(-1)} style={{marginTop:'1em', fontSize:'1.1em',fontWeight:'bold'}}>Atras</Text>
+        <div onClick={()=> navigate(-1)} style={{width:'24px', marginTop:'20px'}}>
+        <BackArrowIcon/>
+        </div>
       {data?.map((element, index) => (
         <Container key={index}>
           <div>{index + 1}.</div>
